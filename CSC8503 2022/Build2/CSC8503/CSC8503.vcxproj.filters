@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkedGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\StateGameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkedGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\StateGameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\MComp\8503\CSC8503 2022\CSC8503\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7D493C0C-10B4-39D7-80EE-57FCA78D6828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{ABCF6923-9682-38BC-9119-DEE311CFE6F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F43D8198-2DB4-34B1-BA08-D3804D4DFF1F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

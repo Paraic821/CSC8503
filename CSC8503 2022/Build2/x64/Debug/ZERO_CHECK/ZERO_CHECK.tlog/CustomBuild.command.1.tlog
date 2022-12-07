@@ -1,0 +1,10 @@
+^H:\MCOMP\8503\CSC8503 2022\BUILD2\CMAKEFILES\C1034E4367D5997C02DE6C01D06CE307\GENERATE.STAMP.RULE
+setlocal
+C:\Users\b8016503\Downloads\cmake-3.25.0-windows-x86_64\cmake-3.25.0-windows-x86_64\bin\cmake.exe "-SH:/MComp/8503/CSC8503 2022" "-BH:/MComp/8503/CSC8503 2022/Build2" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "H:/MComp/8503/CSC8503 2022/Build2/CSC8503.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1ECBA6D-5BDA-3BBF-A3CE-7C348A6F420E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>CSC8503</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\MComp\8503\CSC8503 2022\x64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CSC8503.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CSC8503</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\MComp\8503\CSC8503 2022\x64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CSC8503.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CSC8503</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\MComp\8503\CSC8503 2022\CSC8503\..\OpenGLRendering;H:\MComp\8503\CSC8503 2022\CSC8503\..\NCLCoreClasses;H:\MComp\8503\CSC8503 2022\CSC8503\..\CSC8503CoreClasses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CSC8503.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SDLCheck>true</SDLCheck>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION="H:/MComp/8503/CSC8503 2022/Assets/";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION=\"H:/MComp/8503/CSC8503 2022/Assets/\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\MComp\8503\CSC8503 2022\CSC8503\..\OpenGLRendering;H:\MComp\8503\CSC8503 2022\CSC8503\..\NCLCoreClasses;H:\MComp\8503\CSC8503 2022\CSC8503\..\CSC8503CoreClasses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\MComp\8503\CSC8503 2022\CSC8503\..\OpenGLRendering;H:\MComp\8503\CSC8503 2022\CSC8503\..\NCLCoreClasses;H:\MComp\8503\CSC8503 2022\CSC8503\..\CSC8503CoreClasses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;H:\MComp\8503\CSC8503 2022\x64\Debug\NCLCoreClasses.lib;H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503CoreClasses.lib;H:\MComp\8503\CSC8503 2022\x64\Debug\OpenGLRendering.lib;ws2_32.lib;H:\MComp\8503\CSC8503 2022\x64\Debug\NCLCoreClasses.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/MComp/8503/CSC8503 2022/x64/Debug/CSC8503.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/MComp/8503/CSC8503 2022/x64/Debug/CSC8503.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\MComp\8503\CSC8503 2022\CSC8503\..\OpenGLRendering;H:\MComp\8503\CSC8503 2022\CSC8503\..\NCLCoreClasses;H:\MComp\8503\CSC8503 2022\CSC8503\..\CSC8503CoreClasses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SDLCheck>true</SDLCheck>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION="H:/MComp/8503/CSC8503 2022/Assets/";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION=\"H:/MComp/8503/CSC8503 2022/Assets/\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\MComp\8503\CSC8503 2022\CSC8503\..\OpenGLRendering;H:\MComp\8503\CSC8503 2022\CSC8503\..\NCLCoreClasses;H:\MComp\8503\CSC8503 2022\CSC8503\..\CSC8503CoreClasses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\MComp\8503\CSC8503 2022\CSC8503\..\OpenGLRendering;H:\MComp\8503\CSC8503 2022\CSC8503\..\NCLCoreClasses;H:\MComp\8503\CSC8503 2022\CSC8503\..\CSC8503CoreClasses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;H:\MComp\8503\CSC8503 2022\x64\Release\NCLCoreClasses.lib;H:\MComp\8503\CSC8503 2022\x64\Release\CSC8503CoreClasses.lib;H:\MComp\8503\CSC8503 2022\x64\Release\OpenGLRendering.lib;ws2_32.lib;H:\MComp\8503\CSC8503 2022\x64\Release\NCLCoreClasses.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/MComp/8503/CSC8503 2022/x64/Release/CSC8503.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>H:/MComp/8503/CSC8503 2022/x64/Release/CSC8503.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\MComp\8503\CSC8503 2022\CSC8503\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/MComp/8503/CSC8503 2022/CSC8503/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\b8016503\Downloads\cmake-3.25.0-windows-x86_64\cmake-3.25.0-windows-x86_64\bin\cmake.exe "-SH:/MComp/8503/CSC8503 2022" "-BH:/MComp/8503/CSC8503 2022/Build2" --check-stamp-file "H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\MComp\8503\CSC8503 2022\CMake\Default.cmake;H:\MComp\8503\CSC8503 2022\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/MComp/8503/CSC8503 2022/CSC8503/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\b8016503\Downloads\cmake-3.25.0-windows-x86_64\cmake-3.25.0-windows-x86_64\bin\cmake.exe "-SH:/MComp/8503/CSC8503 2022" "-BH:/MComp/8503/CSC8503 2022/Build2" --check-stamp-file "H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\MComp\8503\CSC8503 2022\CMake\Default.cmake;H:\MComp\8503\CSC8503 2022\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CSC8503.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.h" />
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkedGame.h" />
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkPlayer.h" />
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\StateGameObject.h" />
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.h" />
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\Main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkedGame.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkPlayer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\StateGameObject.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:\MComp\8503\CSC8503 2022\Build2\ZERO_CHECK.vcxproj">
+      <Project>{F548D1AC-2FAC-3B56-BE3E-16C346BB7B74}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503CoreClasses\CSC8503CoreClasses.vcxproj">
+      <Project>{C40DE081-7E89-3CEC-849F-19F4DA321B2E}</Project>
+      <Name>CSC8503CoreClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="H:\MComp\8503\CSC8503 2022\Build2\NCLCoreClasses\NCLCoreClasses.vcxproj">
+      <Project>{199E8C6C-D045-320B-9A9F-677D966CB7FD}</Project>
+      <Name>NCLCoreClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="H:\MComp\8503\CSC8503 2022\Build2\OpenGLRendering\OpenGLRendering.vcxproj">
+      <Project>{66029259-29AE-3DAE-8A21-671F814CF1AC}</Project>
+      <Name>OpenGLRendering</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

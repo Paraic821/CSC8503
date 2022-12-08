@@ -1,2 +1,4 @@
-﻿  TutorialGame.cpp
+﻿  Main.cpp
+H:\MComp\8503\CSC8503 2022\CSC8503\Main.cpp(63,29): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+H:\MComp\8503\CSC8503 2022\CSC8503\Main.cpp(145,29): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
   CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe

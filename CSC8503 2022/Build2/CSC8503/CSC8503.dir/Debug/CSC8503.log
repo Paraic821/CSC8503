@@ -1,2 +1,3 @@
 ﻿  TutorialGame.cpp
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(730): warning C4715:  'NCL::CSC8503::TutorialGame::PlayerLeftClick': not all control paths return a value
   CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe

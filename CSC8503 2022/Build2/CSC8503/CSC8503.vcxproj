@@ -184,7 +184,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Destructible.cpp" />
     <ClCompile Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
       <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -195,8 +194,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/MComp/8503/CSC8503 2022/Build2/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="PlayerObject.cpp" />
-    <ClInclude Include="Destructible.h" />
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.h" />
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkedGame.h" />
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\NetworkPlayer.h" />
@@ -228,7 +225,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx" />
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx" />
-    <ClInclude Include="PlayerObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="H:\MComp\8503\CSC8503 2022\Build2\ZERO_CHECK.vcxproj">

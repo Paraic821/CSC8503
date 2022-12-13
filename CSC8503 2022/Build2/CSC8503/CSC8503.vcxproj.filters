@@ -22,12 +22,6 @@
     <ClCompile Include="H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Destructible.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.h">
@@ -50,12 +44,6 @@
     </ClInclude>
     <ClInclude Include="H:\MComp\8503\CSC8503 2022\Build2\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
-    </ClInclude>
-    <ClInclude Include="Destructible.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerObject.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

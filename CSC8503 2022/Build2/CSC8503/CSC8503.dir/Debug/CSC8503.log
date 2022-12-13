@@ -1,3 +1,103 @@
-﻿  TutorialGame.cpp
-H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(730): warning C4715:  'NCL::CSC8503::TutorialGame::PlayerLeftClick': not all control paths return a value
-  CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe
+﻿  Building Custom Rule H:/MComp/8503/CSC8503 2022/CSC8503/CMakeLists.txt
+  cmake_pch.cxx
+  Destructible.cpp
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(3,12): error C2039:  'vector': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(3,18): error C2873:  'vector': symbol cannot be used in a using-declaration
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(5,27): error C2653:  'NCL': is not a class or namespace name
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(5,27): error C2871:  'Maths': a namespace with this name does not exist
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(15,40): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(15,40): error C2143:  syntax error: missing ',' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(16,37): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(16,37): error C2143:  syntax error: missing ',' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(17,46): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(17,46): error C2143:  syntax error: missing ',' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(19,23): error C3646:  'GetPosition': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(19,23): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(19,32): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(23,20): error C3646:  'GetScale': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(23,20): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(23,29): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(27,29): error C3646:  'GetOrientation': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(27,29): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(27,38): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(31,21): error C3646:  'GetMatrix': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(31,21): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(31,30): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(36,19): error C3646:  'matrix': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(36,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(37,26): error C3646:  'orientation': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(37,26): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(38,21): error C3646:  'position': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(38,21): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(40,18): error C3646:  'scale': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(40,18): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(5,12): error C2039:  'vector': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(5,18): error C2873:  'vector': symbol cannot be used in a using-declaration
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(14,19): error C2039:  'string': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(14,36): error C2061:  syntax error: identifier 'string'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,14): error C2039:  'string': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,20): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,20): error C2143:  syntax error: missing ';' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,38): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(65,33): error C2061:  syntax error: identifier 'Vector3'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(87,8): error C2039:  'string': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(87,19): error C3646:  'name': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(87,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(89,25): error C3646:  'broadphaseAABB': unknown override specifier
+  PlayerObject.cpp
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(89,25): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(3,12): error C2039:  'vector': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(3,18): error C2873:  'vector': symbol cannot be used in a using-declaration
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(5,27): error C2653:  'NCL': is not a class or namespace name
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(5,27): error C2871:  'Maths': a namespace with this name does not exist
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(15,40): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(15,40): error C2143:  syntax error: missing ',' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(16,37): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(16,37): error C2143:  syntax error: missing ',' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(17,46): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(17,46): error C2143:  syntax error: missing ',' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(19,23): error C3646:  'GetPosition': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(19,23): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(19,32): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(23,20): error C3646:  'GetScale': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(23,20): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(23,29): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(27,29): error C3646:  'GetOrientation': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(27,29): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(27,38): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(31,21): error C3646:  'GetMatrix': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(31,21): error C2059:  syntax error: '('
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(31,30): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(36,19): error C3646:  'matrix': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(36,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(37,26): error C3646:  'orientation': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(37,26): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(38,21): error C3646:  'position': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(38,21): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(40,18): error C3646:  'scale': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\Transform.h(40,18): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(5,12): error C2039:  'vector': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(5,18): error C2873:  'vector': symbol cannot be used in a using-declaration
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(14,19): error C2039:  'string': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(14,36): error C2061:  syntax error: identifier 'string'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,14): error C2039:  'string': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,20): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,20): error C2143:  syntax error: missing ';' before '&'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(53,38): error C2334:  unexpected token(s) preceding '{'; skipping apparent function body
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(65,33): error C2061:  syntax error: identifier 'Vector3'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(87,8): error C2039:  'string': is not a member of 'std'
+predefined C++ types (compiler internal)(262): message :  see declaration of 'std'
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(87,19): error C3646:  'name': unknown override specifier
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(87,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(89,25): error C3646:  'broadphaseAABB': unknown override specifier
+  Generating Code...
+H:\MComp\8503\CSC8503 2022\CSC8503CoreClasses\GameObject.h(89,25): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int

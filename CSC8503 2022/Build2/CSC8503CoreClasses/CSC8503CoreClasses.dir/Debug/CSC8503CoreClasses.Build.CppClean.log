@@ -56,16 +56,15 @@ c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503corecl
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\networkstate.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\networkstate.cpp.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\positionconstraint.h.obj
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\orientationconstraint.cpp.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\orientationconstraint.h.obj
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\physicsobject.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\enet\list.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\enet\list.c.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\enet\protocol.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\enet\protocol.c.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\enet\win32.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\enet\win32.c.obj
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\positionconstraint.cpp.obj
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\orientationconstraint.cpp.obj
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\physicsobject.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\gameworld.h.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\gameobject.cpp.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\gameworld.cpp.obj
@@ -76,6 +75,8 @@ c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503corecl
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\physicsobject.cpp.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\physicssystem.cpp.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\physicssystem.h.obj
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\positionconstraint.cpp.obj
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503coreclasses\csc8503coreclasses.dir\debug\collisiondetection.cpp.obj
 h:\mcomp\8503\csc8503 2022\build2\csc8503coreclasses\cmakefiles\generate.stamp
 h:\mcomp\8503\csc8503 2022\x64\debug\csc8503coreclasses.lib
 h:\mcomp\8503\csc8503 2022\x64\debug\csc8503coreclasses.pdb

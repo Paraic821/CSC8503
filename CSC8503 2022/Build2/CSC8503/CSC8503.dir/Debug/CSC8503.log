@@ -1,13 +1,1 @@
-﻿  GameTechRenderer.cpp
-H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.cpp(320,44): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.cpp(320,31): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-  Main.cpp
-H:\MComp\8503\CSC8503 2022\CSC8503\GameTechRenderer.cpp(327,39): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
-H:\MComp\8503\CSC8503 2022\CSC8503\Main.cpp(133,29): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
-  NetworkPlayer.cpp
-  NetworkedGame.cpp
-  StateGameObject.cpp
-  TutorialGame.cpp
-  Generating Code...
-H:\MComp\8503\CSC8503 2022\CSC8503\Main.cpp(222,29): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
-  CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe
+﻿  CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe

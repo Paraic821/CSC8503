@@ -1,17 +1,2 @@
-﻿  GameObject.h
-  GameWorld.h
-  GameObject.cpp
-  GameWorld.cpp
-  CollisionDetection.h
-  CollisionDetection.cpp
-  QuadTree.h
-  QuadTree.cpp
-  GameServer.cpp
-  NetworkObject.h
-  NetworkObject.cpp
-  PositionConstraint.cpp
-  OrientationConstraint.cpp
-  PhysicsObject.cpp
-  PhysicsSystem.cpp
-  PhysicsSystem.h
+﻿  CollisionDetection.cpp
   CSC8503CoreClasses.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503CoreClasses.lib

@@ -1,1 +1,6 @@
-﻿  CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe
+﻿  TutorialGame.cpp
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(468,131): warning C4305:  'argument': truncation from 'double' to 'float'
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(469,131): warning C4305:  'argument': truncation from 'double' to 'float'
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(470,133): warning C4305:  'argument': truncation from 'double' to 'float'
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(471,132): warning C4305:  'argument': truncation from 'double' to 'float'
+  CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe

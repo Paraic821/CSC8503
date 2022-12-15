@@ -2,10 +2,10 @@ h:\mcomp\8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\cmake_pch.pch
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\vc142.pdb
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\cmake_pch.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\tutorialgame.obj
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\networkedgame.obj
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\main.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\stategameobject.obj
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\networkedgame.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\networkplayer.obj
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\main.obj
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\gametechrenderer.obj
 h:\mcomp\8503\csc8503 2022\build2\csc8503\cmakefiles\generate.stamp
 h:\mcomp\8503\csc8503 2022\x64\debug\csc8503.exe
@@ -17,8 +17,10 @@ c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc85
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\custombuild.command.1.tlog
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\custombuild.read.1.tlog
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\custombuild.write.1.tlog
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.17756.delete.1.tlog
-c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.18060.delete.1.tlog
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.3224.delete.1.tlog
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.432.delete.1.tlog
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.6956.delete.1.tlog
+c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.9600.delete.1.tlog
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.command.1.tlog
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.read.1.tlog
 c:\users\b8016503\downloads\sourcetree\csc8503\csc8503 2022\build2\csc8503\csc8503.dir\debug\csc8503.tlog\link.write.1.tlog

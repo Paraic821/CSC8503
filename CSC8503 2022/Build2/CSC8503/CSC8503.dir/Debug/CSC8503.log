@@ -1,6 +1,13 @@
-﻿  TutorialGame.cpp
-H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(529,131): warning C4305:  'argument': truncation from 'double' to 'float'
-H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(530,131): warning C4305:  'argument': truncation from 'double' to 'float'
-H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(531,133): warning C4305:  'argument': truncation from 'double' to 'float'
-H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(532,132): warning C4305:  'argument': truncation from 'double' to 'float'
+﻿  Main.cpp
+  NetworkedGame.cpp
+  NetworkPlayer.cpp
+  TutorialGame.cpp
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(20,10): warning C4067:  unexpected tokens following preprocessor directive - expected a newline
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(412,29): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(501,29): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(760,131): warning C4305:  'argument': truncation from 'double' to 'float'
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(761,131): warning C4305:  'argument': truncation from 'double' to 'float'
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(762,133): warning C4305:  'argument': truncation from 'double' to 'float'
+  Generating Code...
+H:\MComp\8503\CSC8503 2022\CSC8503\TutorialGame.cpp(763,132): warning C4305:  'argument': truncation from 'double' to 'float'
   CSC8503.vcxproj -> H:\MComp\8503\CSC8503 2022\x64\Debug\CSC8503.exe

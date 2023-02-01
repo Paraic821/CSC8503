@@ -22,13 +22,6 @@ NavigationGrid::NavigationGrid()	{
 }
 
 NavigationGrid::NavigationGrid(const std::string&filename) : NavigationGrid() {
-
-	std::ofstream f(Assets::DATADIR + filename);
-	f << "hello!" << std::endl;
-	f.close();
-
-
-
 	std::ifstream infile(Assets::DATADIR + filename);
 
 	infile >> nodeSize;
@@ -44,6 +37,8 @@ NavigationGrid::NavigationGrid(const std::string&filename) : NavigationGrid() {
 			infile >> type;
 			n.type = type;
 			n.position = Vector3((float)(x * nodeSize), 0, (float)(y * nodeSize));
+			int abcd = 5;
+			abcd += 10;
 		}
 	}
 	

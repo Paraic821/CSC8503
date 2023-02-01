@@ -11,6 +11,7 @@ https://research.ncl.ac.uk/game/
 
 namespace NCL::Assets {
 	const std::string ASSETROOT(ASSETROOTLOCATION);
+	//const std::string ASSETROOT = "C:/Users/b8016503/Downloads/Sourcetree/CSC8503/CSC8503 2022/Assets/";
 	const std::string SHADERDIR(ASSETROOT + "Shaders/");
 	const std::string MESHDIR(ASSETROOT + "Meshes/");
 	const std::string TEXTUREDIR(ASSETROOT + "Textures/");

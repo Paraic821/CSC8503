@@ -40,9 +40,15 @@ namespace NCL {
 				shuffleObjects = state;
 			}
 
+			float GetDestructibleCount() {
+				return destructibleCount;
+			}
+
 			bool Raycast(Ray& r, RayCollision& closestCollision, bool closestObject = false, GameObject* ignore = nullptr) const;
 
 			virtual void UpdateWorld(float dt);
+
+			void RemoveInactiveObjects();
 
 			void OperateOnContents(GameObjectFunc f);
 
@@ -68,6 +74,8 @@ namespace NCL {
 			bool shuffleObjects;
 			int		worldIDCounter;
 			int		worldStateCounter;
+
+			float destructibleCount = 0;
 		};
 	}
 }

@@ -6,13 +6,16 @@
 using namespace NCL;
 using namespace CSC8503;
 
-PhysicsObject::PhysicsObject(Transform* parentTransform, const CollisionVolume* parentVolume, float elastic)	{
+PhysicsObject::PhysicsObject(Transform* parentTransform, const CollisionVolume* parentVolume, float elastic, float lDamping, float aDamping)	{
 	transform	= parentTransform;
 	volume		= parentVolume;
 
 	inverseMass = 1.0f;
 	elasticity	= elastic;
 	friction	= 0.8f;
+
+	linearDamping = lDamping;
+	angularDamping = aDamping;
 }
 
 PhysicsObject::~PhysicsObject()	{

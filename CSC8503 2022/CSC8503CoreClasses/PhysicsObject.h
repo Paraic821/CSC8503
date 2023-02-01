@@ -9,7 +9,7 @@ namespace NCL {
 
 		class PhysicsObject	{
 		public:
-			PhysicsObject(Transform* parentTransform, const CollisionVolume* parentVolume, float elastic = 0.66f);
+			PhysicsObject(Transform* parentTransform, const CollisionVolume* parentVolume, float elastic = 0.66f, float lDamping = 0.4f, float aDamping = 0.4f);
 			~PhysicsObject();
 
 			Vector3 GetLinearVelocity() const {
@@ -34,6 +34,22 @@ namespace NCL {
 
 			float GetInverseMass() const {
 				return inverseMass;
+			}
+
+			float GetLinearDamping() {
+				return linearDamping;
+			}
+
+			void SetLinearDamping(float lDamping) {
+				linearDamping = lDamping;
+			}
+
+			float GetAngularDamping() {
+				return angularDamping;
+			}
+
+			void SetAngularDamping(float aDamping) {
+				angularDamping = aDamping;
 			}
 
 			float GetCoefficientOfRestitution() {
@@ -64,6 +80,14 @@ namespace NCL {
 				angularVelocity = v;
 			}
 
+			bool GetIsProjectile() {
+				return isProjectile;
+			}
+
+			void SetIsProjectile(bool p) {
+				isProjectile = p;
+			}
+
 			void InitCubeInertia();
 			void InitSphereInertia(bool hollow = false);
 			void InitCapsuleInertia();
@@ -78,6 +102,8 @@ namespace NCL {
 			const CollisionVolume* volume;
 			Transform*		transform;
 
+			bool isProjectile = false;
+
 			float inverseMass;
 			float elasticity;
 			float friction;
@@ -85,6 +111,9 @@ namespace NCL {
 			//linear stuff
 			Vector3 linearVelocity;
 			Vector3 force;
+
+			float	linearDamping = 0.4f;
+			float	angularDamping = 0.4f;
 			
 			//angular stuff
 			Vector3 angularVelocity;

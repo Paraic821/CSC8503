@@ -10,15 +10,11 @@ out Vertex
 {
 	vec4 colour;
 	vec2 texCoord;
-	vec3 position;
 } OUT;
 
 void main(void)
 {
-	vec4 temp 		= viewProjMatrix * vec4(position, 1.0);
-	gl_Position		= temp;
+	gl_Position		= viewProjMatrix * vec4(position, 1.0);;
 	OUT.texCoord	= texCoord;
 	OUT.colour		= colour;
-	OUT.position 	= vec3(temp.x, temp.y, temp.z);
-	//OUT.position 	= position;
 }

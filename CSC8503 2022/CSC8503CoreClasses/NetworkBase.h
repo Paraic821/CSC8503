@@ -40,6 +40,21 @@ public:
 	virtual void ReceivePacket(int type, GamePacket* payload, int source = -1) = 0;
 };
 
+struct StringPacket : public GamePacket {
+	char stringData[256];
+
+	StringPacket(const std::string& message) {
+		type = BasicNetworkMessages::String_Message;
+		size = (short)message.length();
+		memcpy(stringData, message.data(), size);
+	};
+
+	std::string GetStringFromData() {
+		std::string realString(stringData);
+		realString.resize(size);
+		return realString;
+	}};
+
 class NetworkBase	{
 public:
 	static void Initialise();

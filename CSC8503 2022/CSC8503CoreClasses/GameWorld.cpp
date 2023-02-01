@@ -78,6 +78,30 @@ void GameWorld::UpdateWorld(float dt) {
 	if (shuffleConstraints) {
 		std::shuffle(constraints.begin(), constraints.end(), e);
 	}
+
+	RemoveInactiveObjects();
+}
+
+void GameWorld::RemoveInactiveObjects() {
+	std::vector<GameObject*>::const_iterator first;
+	std::vector<GameObject*>::const_iterator last;
+	GetObjectIterators(first, last);
+
+	std::vector<GameObject*> toBeDeleted;
+
+	destructibleCount = 0;
+
+	for (auto i = first; i != last; ++i) {
+		if (!(*i)->IsActive()) {
+			toBeDeleted.emplace_back(*i);
+		}
+		if ((*i)->GetObjectType() == Destructible)
+			destructibleCount++;
+	}
+
+	for (int i = 0; i < toBeDeleted.size(); i++) {
+		RemoveGameObject(toBeDeleted[i]);
+	}
 }
 
 bool GameWorld::Raycast(Ray& r, RayCollision& closestCollision, bool closestObject, GameObject* ignoreThis) const {

@@ -14,8 +14,12 @@ PushdownMachine::~PushdownMachine()
 
 bool PushdownMachine::Update(float dt) {
 	if (activeState) {
-		PushdownState* newState = nullptr;
 		PushdownState::PushdownResult result = activeState->OnUpdate(dt, &newState);
+
+		if (tempResult != PushdownState::PushdownResult::NoChange) {
+			result = tempResult;
+			tempResult = PushdownState::PushdownResult::NoChange;
+		}
 
 		switch (result) {
 			case PushdownState::Pop: {

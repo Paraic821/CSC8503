@@ -312,7 +312,8 @@ void PhysicsSystem::BroadPhase() {
 				broadphaseCollisions.insert(info);
 			}
 		}
-	});
+	});
+
 }
 
 /*
@@ -327,7 +328,8 @@ void PhysicsSystem::NarrowPhase() {
 			info.framesLeft = numCollisionFrames;
 			ImpulseResolveCollision(*info.a, *info.b, info.point);
 			allCollisions.insert(info); // insert into our main set
-		}	}
+		}
+	}
 }
 
 /*
@@ -385,7 +387,7 @@ void PhysicsSystem::IntegrateVelocity(float dt) {
 	std::vector <GameObject*>::const_iterator first;
 	std::vector <GameObject*>::const_iterator last;
 	gameWorld.GetObjectIterators(first, last);
-	float frameLinearDamping = 1.0f - (linearDamping * dt);
+	//float frameLinearDamping = 1.0f - (linearDamping * dt);
 	
 	for (auto i = first; i != last; ++i) {
 		PhysicsObject* object = (*i)->GetPhysicsObject();
@@ -399,8 +401,14 @@ void PhysicsSystem::IntegrateVelocity(float dt) {
 		position += linearVel * dt;
 		transform.SetPosition(position);
 		// Linear Damping
+		float frameLinearDamping = 1.0f - (object->GetLinearDamping() * dt);
 		linearVel = linearVel * frameLinearDamping;
 		object->SetLinearVelocity(linearVel);
+
+		if (linearVel.Length() > projectileSpeed)
+			object->SetIsProjectile(true);
+		else
+			object->SetIsProjectile(false);
 
 		// Orientation Stuff
 		Quaternion orientation = transform.GetOrientation();
@@ -412,7 +420,8 @@ void PhysicsSystem::IntegrateVelocity(float dt) {
 		transform.SetOrientation(orientation);
 		
 		// Damp the angular velocity too
-		float frameAngularDamping = 1.0f - (angularDamping * dt);
+		//float frameAngularDamping = 1.0f - (angularDamping * dt);
+		float frameAngularDamping = 1.0f - (object->GetAngularDamping() * dt);
 		angVel = angVel * frameAngularDamping;
 		object->SetAngularVelocity(angVel);
 

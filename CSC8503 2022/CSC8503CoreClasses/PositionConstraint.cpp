@@ -2,7 +2,7 @@
 //#include "../../Common/Vector3.h"
 #include "GameObject.h"
 #include "PhysicsObject.h"
-//#include "Debug.h"
+#include "Debug.h"
 
 
 
@@ -27,8 +27,11 @@ PositionConstraint::~PositionConstraint()
 void PositionConstraint::UpdateConstraint(float dt)	{
 	Vector3 relativePos = objectA->GetTransform().GetPosition() - objectB->GetTransform().GetPosition();
 	
+	Debug::DrawLine(objectA->GetTransform().GetPosition(), objectB->GetTransform().GetPosition(), Vector4(0, 0, 0, 0));
+
 	float currentDistance = relativePos.Length();
-	float offset = distance - currentDistance;
+	float offset = distance - currentDistance;
+
 	if(abs(offset) > 0.0f){
 		Vector3 offsetDir = relativePos.Normalised();
 		

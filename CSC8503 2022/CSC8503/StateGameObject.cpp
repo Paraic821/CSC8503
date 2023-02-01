@@ -7,8 +7,9 @@
 using namespace NCL;
 using namespace CSC8503;
 
-StateGameObject::StateGameObject() {
-	counter = 0.0f;
+StateGameObject::StateGameObject(ObjectType t) {
+	objType = t;
+	counter = 1.5f;
 	stateMachine = new StateMachine();
 	
 	State* stateA = new State([&](float dt)->void{	this->MoveLeft(dt);		});
@@ -30,11 +31,11 @@ void StateGameObject::Update(float dt) {
 }
 
 void StateGameObject::MoveLeft(float dt) {
-	GetPhysicsObject()->AddForce({-100, 0, 0});
+	GetPhysicsObject()->AddForce({-5000, 0, 0});
 	counter += dt;
 }
 
 void StateGameObject::MoveRight(float dt) {
-	GetPhysicsObject()->AddForce({100, 0, 0});
+	GetPhysicsObject()->AddForce({5000, 0, 0});
 	counter -= dt;
 }

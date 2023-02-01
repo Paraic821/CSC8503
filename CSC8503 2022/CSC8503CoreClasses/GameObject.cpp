@@ -6,8 +6,9 @@
 
 using namespace NCL::CSC8503;
 
-GameObject::GameObject(string objectName)	{
+GameObject::GameObject(ObjectType t, string objectName)	{
 	name			= objectName;
+	objType			= t;
 	worldID			= -1;
 	isActive		= true;
 	boundingVolume	= nullptr;
@@ -47,5 +48,16 @@ void GameObject::UpdateBroadphaseAABB() {
 		mat = mat.Absolute();
 		Vector3 halfSizes = ((OBBVolume&)*boundingVolume).GetHalfDimensions();
 		broadphaseAABB = mat * halfSizes;
+	}
+}
+
+void GameObject::SetColour() {
+	switch (objType) {
+	case Destructible:
+		renderObject->SetColour(Vector4(1, 0, 0, 1));
+		break;
+	case Points:
+		renderObject->SetColour(Vector4(0, 0, 1, 1));
+		break;
 	}
 }

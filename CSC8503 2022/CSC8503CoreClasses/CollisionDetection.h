@@ -66,12 +66,20 @@ namespace NCL {
 			const CapsuleVolume& volumeA, const Transform& worldTransformA,
 			const SphereVolume& volumeB, const Transform& worldTransformB, CollisionInfo& collisionInfo);
 
+		static bool CapsuleIntersection(	const CapsuleVolume& volumeA, const Transform& worldTransformA,
+											const CapsuleVolume& volumeB, const Transform& worldTransformB, CollisionInfo& collisionInfo);
+
 		//TODO ADD THIS PROPERLY
 		static bool RayBoxIntersection(const Ray&r, const Vector3& boxPos, const Vector3& boxSize, RayCollision& collision);
 
 		static Ray BuildRayFromMouse(const Camera& c);
 
+		static Ray BuildRayFromCenterScreen(const Camera& c);
+
 		static bool RayIntersection(const Ray&r, GameObject& object, RayCollision &collisions);
+
+		/*Returns closest point on line ab to point c. Closest point is clamped to not exceed (halfheight - radius) distance along the line. */
+		static Vector3 ClosestPointOnLine(Vector3 a, Vector3 b, Vector3 c, float halfHeight, float radius);
 
 
 		static bool RayAABBIntersection(const Ray&r, const Transform& worldTransform, const AABBVolume&	volume, RayCollision& collision);

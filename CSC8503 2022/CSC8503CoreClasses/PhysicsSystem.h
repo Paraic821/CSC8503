@@ -58,6 +58,8 @@ namespace NCL {
 			float	linearDamping = 0.4f;
 			float	angularDamping = 0.4f;
 
+			float projectileSpeed = 1.0f;
+
 			std::set<CollisionDetection::CollisionInfo> allCollisions;
 			std::set<CollisionDetection::CollisionInfo> broadphaseCollisions;
 			std::vector<CollisionDetection::CollisionInfo> broadphaseCollisionsVec;

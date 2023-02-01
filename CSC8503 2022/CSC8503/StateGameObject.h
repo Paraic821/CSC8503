@@ -6,7 +6,7 @@ namespace NCL {
         class StateMachine;
         class StateGameObject : public GameObject  {
         public:
-            StateGameObject();
+            StateGameObject(ObjectType t = Default);
             ~StateGameObject();
 
             virtual void Update(float dt);

@@ -268,6 +268,14 @@ bool CollisionDetection::ObjectIntersection(GameObject* a, GameObject* b, Collis
 		collisionInfo.b = a;
 		return SphereCapsuleIntersection((CapsuleVolume&)*volB, transformB, (SphereVolume&)*volA, transformA, collisionInfo);
 	}
+	if (volA->type == VolumeType::Capsule && volB->type == VolumeType::OBB) {
+		return OBBCapsuleIntersection((CapsuleVolume&)*volA, transformA, (OBBVolume&)*volB, transformB, collisionInfo);
+	}
+	if (volB->type == VolumeType::Capsule && volA->type == VolumeType::OBB) {
+		collisionInfo.a = b;
+		collisionInfo.b = a;
+		return OBBCapsuleIntersection((CapsuleVolume&)*volB, transformB, (OBBVolume&)*volA, transformA, collisionInfo);
+	}
 
 	if (volA->type == VolumeType::Capsule && volB->type == VolumeType::AABB) {
 		return AABBCapsuleIntersection((CapsuleVolume&)*volA, transformA, (AABBVolume&)*volB, transformB, collisionInfo);
@@ -464,6 +472,25 @@ bool CollisionDetection::SphereCapsuleIntersection(	const CapsuleVolume& volumeA
 
 	Transform spherePos = worldTransformA;
 	return SphereIntersection(SphereVolume(volumeA.GetRadius()), spherePos.SetPosition(d), volumeB, worldTransformB, collisionInfo);
+}
+
+bool CollisionDetection::OBBCapsuleIntersection(const CapsuleVolume& volumeA, const Transform& worldTransformA,
+	const OBBVolume& volumeB, const Transform& worldTransformB, CollisionInfo& collisionInfo) {
+
+	Vector3 capsuleOrigin = worldTransformA.GetPosition();
+	Quaternion capsuleOrientation = worldTransformA.GetOrientation();
+	Vector3 capsuleOffset = Vector3(0, volumeA.GetHalfHeight() - volumeA.GetRadius(), 0);
+	capsuleOffset = (capsuleOrientation * capsuleOffset);
+	Vector3 a = capsuleOrigin + capsuleOffset;
+
+	Vector3 d = ClosestPointOnLine(capsuleOrigin, a, worldTransformB.GetPosition(), volumeA.GetHalfHeight(), volumeA.GetRadius());
+
+	Transform spherePos = worldTransformA;
+	GameObject* temp = collisionInfo.a;
+	collisionInfo.a = collisionInfo.b;
+	collisionInfo.b = temp;
+
+	return OBBSphereIntersection(volumeB, worldTransformB, SphereVolume(volumeA.GetRadius()), spherePos.SetPosition(d), collisionInfo);
 }
 
 bool CollisionDetection::CapsuleIntersection(	const CapsuleVolume& volumeA, const Transform& worldTransformA,

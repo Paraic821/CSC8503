@@ -66,6 +66,10 @@ namespace NCL {
 			const CapsuleVolume& volumeA, const Transform& worldTransformA,
 			const SphereVolume& volumeB, const Transform& worldTransformB, CollisionInfo& collisionInfo);
 
+		static bool OBBCapsuleIntersection(
+			const CapsuleVolume& volumeA, const Transform& worldTransformA,
+			const OBBVolume& volumeB, const Transform& worldTransformB, CollisionInfo& collisionInfo);
+
 		static bool CapsuleIntersection(	const CapsuleVolume& volumeA, const Transform& worldTransformA,
 											const CapsuleVolume& volumeB, const Transform& worldTransformB, CollisionInfo& collisionInfo);
 

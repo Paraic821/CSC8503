@@ -464,41 +464,14 @@ bool NavigationMesh::NodeInList(NavTri* n, std::vector<NavTri*>& list) const {
 
 NavigationPath NavigationMesh::StringPull(std::vector<NavTri*> path, Vector3 startPoint, Vector3 endPoint) {
 	NavigationPath outpath;
-	//outpath.PushWaypoint(path[0]->centroid);
 	outpath.PushWaypoint(startPoint);
 
 	std::vector<NavTri*> realPath = InvertPath(path);
 
-	//N
-	bool test1 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(300,0,200), Vector3(300,0,100));
-	bool test1a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(300,0,200), Vector3(300,0,300));
-	//NE
-	bool test2 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(300,0,300), Vector3(300, 0, 200));
-	bool test2a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(300, 0, 300), Vector3(200, 0, 300));
-	//E
-	bool test3 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(200,0,300), Vector3(300, 0, 300));
-	bool test3a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(200, 0, 300), Vector3(100, 0, 300));
-	//SE
-	bool test4 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(100,0,300), Vector3(200, 0, 300));
-	bool test4a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(100, 0, 300), Vector3(100, 0, 200));
-	//S
-	bool test5 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(100,0,200), Vector3(100, 0, 300));
-	bool test5a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(100, 0, 200), Vector3(100, 0, 100));
-	//SW
-	bool test6 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(100,0,100), Vector3(100, 0, 200));
-	bool test6a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(100, 0, 100), Vector3(200, 0, 100));
-	//W
-	bool test7 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(200, 0, 100), Vector3(100, 0, 100));
-	bool test7a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(200, 0, 100), Vector3(300, 0, 100));
-	//NW
-	bool test8 = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(300, 0, 100), Vector3(200, 0, 100));
-	bool test8a = IsPointToTheLeft(Vector3(200, 0, 200), Vector3(300, 0, 100), Vector3(300, 0, 200));
-
 	std::vector<Vector3> leftVertices;
 	std::vector<Vector3> rightVertices;
 
-	Vector3 apex = realPath[0]->centroid;
-	//Vector3 apex = startPoint;
+	Vector3 apex = startPoint;
 	int left = 0;
 	int right = 0;
 
@@ -512,18 +485,17 @@ NavigationPath NavigationMesh::StringPull(std::vector<NavTri*> path, Vector3 sta
 		currentTriVerts[1] = allVerts[realPath[i]->indices[1]];
 		currentTriVerts[2] = allVerts[realPath[i]->indices[2]];
 
-		nextTriVerts[0] = allVerts[realPath[i+1]->indices[0]];
+		nextTriVerts[0] = allVerts[realPath[i + 1]->indices[0]];
 		nextTriVerts[1] = allVerts[realPath[i + 1]->indices[1]];
 		nextTriVerts[2] = allVerts[realPath[i + 1]->indices[2]];
-				
+
 		int n = 0;
 		for (int j = 0; j < 3; j++) {
-			if		(currentTriVerts[j] == nextTriVerts[0]) { sharedVerts[n] = currentTriVerts[j]; n++; }
+			if (currentTriVerts[j] == nextTriVerts[0]) { sharedVerts[n] = currentTriVerts[j]; n++; }
 			else if (currentTriVerts[j] == nextTriVerts[1]) { sharedVerts[n] = currentTriVerts[j]; n++; }
 			else if (currentTriVerts[j] == nextTriVerts[2]) { sharedVerts[n] = currentTriVerts[j]; n++; }
 		}
 
-		//if (Vector3::Dot(path[i]->centroid, sharedVerts[0]) < Vector3::Dot(path[i]->centroid, sharedVerts[1])) {
 		if (IsPointToTheLeft(realPath[i]->centroid, (sharedVerts[0] + sharedVerts[1]) / 2, sharedVerts[0])) {
 			leftVertices.emplace_back(sharedVerts[0]);
 			rightVertices.emplace_back(sharedVerts[1]);
@@ -534,19 +506,11 @@ NavigationPath NavigationMesh::StringPull(std::vector<NavTri*> path, Vector3 sta
 		}
 	}
 
-	//if (IsPointToTheLeft((leftVertices[path.size() - 1] + rightVertices[path.size() - 1]) / 2, (path[path.size() - 1]->centroid + path(path[path.size() - 1]->), path[path.size() - 1]->centroid)) {
-	//	leftVertices.emplace_back(sharedVerts[0]);
-	//	rightVertices.emplace_back(sharedVerts[1]);
-	//}
-	//else {
-	//	leftVertices.emplace_back(sharedVerts[1]);
-	//	rightVertices.emplace_back(sharedVerts[0]);
-	//}
-	leftVertices.emplace_back(realPath[realPath.size() - 1]->centroid);
-	rightVertices.emplace_back(realPath[realPath.size() - 1]->centroid);
+	leftVertices.emplace_back(endPoint);
+	rightVertices.emplace_back(endPoint);
 
 	// Step through channel.
-	for (int i = 1; i <= realPath.size() - 1; i++){
+	for (int i = 1; i <= realPath.size() - 1; i++) {
 		// If new left vertex is different, process.
 		if (leftVertices[i] != leftVertices[left] && i > left)
 		{
@@ -571,6 +535,7 @@ NavigationPath NavigationMesh::StringPull(std::vector<NavTri*> path, Vector3 sta
 
 					outpath.PushWaypoint(rightVertices[right]);
 					apex = rightVertices[right];
+					i = right;
 					right = next;
 				}
 				else
@@ -603,6 +568,7 @@ NavigationPath NavigationMesh::StringPull(std::vector<NavTri*> path, Vector3 sta
 
 					outpath.PushWaypoint(leftVertices[left]);
 					apex = leftVertices[left];
+					i = right;
 					left = next;
 				}
 				else
@@ -612,7 +578,6 @@ NavigationPath NavigationMesh::StringPull(std::vector<NavTri*> path, Vector3 sta
 			}
 		}
 	}
-	//outpath.PushWaypoint(path[path.size() - 1]->centroid);
 	outpath.PushWaypoint(endPoint);
 	return outpath;
 }
